@@ -1,0 +1,58 @@
+
+.Gridwrapper{
+ display: grid;
+ width: 100vw;
+ height: 100vh;
+ grid-template-areas: 
+ "he he he "
+ "a1 a2 a3"
+ "ma ma as"
+ "a4 a4 as"
+ "a4 a4 as"
+ "a4 a4 as"
+ "fo fo fo "
+ ;
+ grid-template-columns: repeat(3, 1fr);
+ grid-template-rows: repeat(6, 1fr);
+ grid-gap: 10px;
+}
+.header {
+  grid-area: he;
+  background: lightblue;
+}
+.article1 { 
+    grid-area: a1;
+    background: green; 
+    grid-template-columns: repeat(3, 1fr);
+}
+
+
+.article2 { 
+    grid-area: a2;
+    background: lightseagreen; 
+}
+
+.article3 { 
+    grid-area: a3;
+    background: pink; 
+}
+
+.main {
+    grid-area: ma;
+    background: sandybrown;
+}
+
+.aside {
+    grid-area: as;
+    background: lightgoldenrodyellow;
+}
+
+.article4 { 
+    grid-area: a4;
+    background: lightseagreen; 
+}
+
+.footer{
+    grid-area: fo;
+    background: lightgreen;
+}
